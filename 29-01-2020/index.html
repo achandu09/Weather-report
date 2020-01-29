@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+<body style="background-color: lightsalmon;">
+    <h1 style="text-align: center;font-size: large;font-style: italic;">Weather Report</h1>
+    <fieldset style="width: 500px;margin-left:400px;margin-top: 100px;">
+        <legend>Weather</legend>
+        <select id="city">
+            <option value="hyderabad">Hyderabad</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="pune">Pune</option>
+            <option value="chennai">Chennai</option>
+            <option value="delhi">Delhi</option>
+        </select></br>
+        <input type="submit" value="Get Report!" style="margin-top:25px;" onclick="myFunction()">
+        <h3>Temperature:</h3><p id="temp"></p>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>
