@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In Page</title>
+</head>
+<body>
+    <script src="login.js" ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBOcBrpyfg0fKE0yVHhs2Gt5pulDNxPrrI",
+    authDomain: "loginvalidation-c5c4e.firebaseapp.com",
+    databaseURL: "https://loginvalidation-c5c4e.firebaseio.com",
+    projectId: "loginvalidation-c5c4e",
+    storageBucket: "loginvalidation-c5c4e.appspot.com",
+    messagingSenderId: "679839439362",
+    appId: "1:679839439362:web:cbfe8b6ec1116cb334e51b",
+    measurementId: "G-WWR9JCTBG6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <fieldset style="text-align: center;padding: 20px;margin: 100px;">
+        <legend>
+            Log In
+        </legend>
+        <div style="margin: 30px;">Username : <input type="text" id="user"></div>
+        <div style="margin: 30px;">Password : <input type="text" id="pass"></div>
+        <div><input type="submit" onclick="validate()"></div>
+        <p id="validation"></p>
+    </fieldset>
+</body>
+</html>
